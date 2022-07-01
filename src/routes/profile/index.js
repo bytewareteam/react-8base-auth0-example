@@ -1,12 +1,13 @@
 import { useQuery } from '@apollo/client';
 
 import { CURRENT_USER_QUERY } from 'shared/graphql';
+import { useAuth } from '8base-react-sdk';
 
 export const Profile = () => {
   const { data, loading } = useQuery(CURRENT_USER_QUERY);
 
   return (
-    <>
+    <div className="container">
       <h1>Welcome Profile!</h1>
       {loading ? (
         <span>Loading...</span>
@@ -21,6 +22,6 @@ export const Profile = () => {
           </ul>
         </div>
       )}
-    </>
+    </div>
   );
 };

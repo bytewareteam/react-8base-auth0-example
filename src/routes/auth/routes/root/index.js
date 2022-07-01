@@ -5,7 +5,7 @@ export const AuthContainer = () => {
   const { authClient } = useAuth();
 
   useEffect(() => {
-    authClient.authorize();
+    authClient.authorize({ connection: 'OneLogin' });
   }, [authClient]);
 
   return <h2>Loading...</h2>;

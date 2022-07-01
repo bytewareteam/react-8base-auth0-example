@@ -1,5 +1,5 @@
 export const Home = () => (
-  <div>
+  <div className="container">
     <h1>Welcome Home!</h1>
   </div>
 );

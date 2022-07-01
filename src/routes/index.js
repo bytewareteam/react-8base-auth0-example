@@ -7,6 +7,7 @@ import { NavBar, ProtectedRoute } from 'components';
 import { Home } from './home';
 import { Profile } from './profile';
 import { AuthRoutes } from './auth';
+import ProjectsPage from 'routes/projects';
 
 export const Routes = () => {
   return (
@@ -20,6 +21,7 @@ export const Routes = () => {
             <Switch>
               <Route exact path="/" component={Home} />
               <ProtectedRoute exact path="/profile" component={Profile} />
+              <ProtectedRoute exact path="/projects" component={ProjectsPage} />
               <Redirect to="/" />
             </Switch>
           </div>

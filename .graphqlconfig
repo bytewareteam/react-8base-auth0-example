@@ -1,0 +1,11 @@
+{
+  "name": "Untitled GraphQL Schema",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "https://api.8base.com/cl516ypk100hd09ju3q4pdf8w"
+      }
+    }
+  }
+}

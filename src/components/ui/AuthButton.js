@@ -15,7 +15,7 @@ export const AuthButton = () => {
   }, [apolloClient, authClient]);
 
   const onLoginClick = useCallback(() => {
-    authClient.authorize();
+    authClient.authorize({ connection: 'OneLogin' });
   }, [authClient]);
 
   if (loading) {

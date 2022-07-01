@@ -13,6 +13,8 @@ const NavBar = () => (
     <span> | </span>
     <Link to="/profile">Profile</Link>
     <span> | </span>
+    <Link to="/projects">Projects</Link>
+    <span> | </span>
     <AuthButton />
   </div>
 );
