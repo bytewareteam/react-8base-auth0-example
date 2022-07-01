@@ -1,7 +1,6 @@
 import { useQuery } from '@apollo/client';
 
 import { CURRENT_USER_QUERY } from 'shared/graphql';
-import { useAuth } from '8base-react-sdk';
 
 export const Profile = () => {
   const { data, loading } = useQuery(CURRENT_USER_QUERY);
