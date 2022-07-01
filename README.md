@@ -28,6 +28,7 @@ REACT_APP_WORKSPACE_ENDPOINT=<workspace_endpoint>
 REACT_APP_AUTH_PROFILE_ID=<auth_profile_id>
 REACT_APP_AUTH_CLIENT_ID=<auth_client_id>
 REACT_APP_AUTH_DOMAIN=<auth_domain>
+REACT_APP_AUTH_CONNECTION=<auth_SAML_connection_name>
 ```
 
 2. Run the app... seriously, just run it now.
