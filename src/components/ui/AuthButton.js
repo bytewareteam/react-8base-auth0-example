@@ -3,6 +3,7 @@ import { useApolloClient, useQuery } from '@apollo/client';
 import { useAuth } from '8base-react-sdk';
 
 import { CURRENT_USER_QUERY } from 'shared/graphql';
+import { AUTH_CONNECTION } from 'shared/constants';
 
 export const AuthButton = () => {
   const { authClient, isAuthorized } = useAuth();
@@ -15,7 +16,7 @@ export const AuthButton = () => {
   }, [apolloClient, authClient]);
 
   const onLoginClick = useCallback(() => {
-    authClient.authorize({ connection: 'OneLogin' });
+    authClient.authorize({ connection: AUTH_CONNECTION });
   }, [authClient]);
 
   if (loading) {
