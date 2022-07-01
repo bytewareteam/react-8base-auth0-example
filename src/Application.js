@@ -2,8 +2,8 @@ import React, { useCallback } from 'react';
 import { AppProvider } from '8base-react-sdk';
 import { BrowserRouter } from 'react-router-dom';
 
-import { WORKSPACE_ENDPOINT } from './shared/constants';
-import { authClient } from './shared/auth';
+import { WORKSPACE_ENDPOINT } from 'shared/constants';
+import { authClient } from 'shared/auth';
 import { Routes } from './routes';
 
 export const Application = () => {
